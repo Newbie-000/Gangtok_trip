@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IIIT-A to Gangtok</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Indian_Institute_of_Information_Technology%2C_Allahabad_Logo.png/220px-Indian_Institute_of_Information_Technology%2C_Allahabad_Logo.png">
+<style>
+p {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  color:black;
+  position:relative;
+  top:0;
+  left:509px;
+  background-color:#e4f9f5;
+  display:inline-block;
+text-align: center;
+}
+body {
+  background-image: url('https://media.gettyimages.com/photos/scenic-view-of-agricultural-field-and-mountains-against-sky-picture-id921726050?k=6&m=921726050&s=612x612&w=0&h=e62G5FzCfe8Y5O-aylj9-wBv1-F2NFZ1QHzX3AajWx0=');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h3{
+  font-size:100px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <h3>Trip to Gangtok</h3>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("dec 25, 2020 2:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
